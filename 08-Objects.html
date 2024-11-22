@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        //an object groups multiple values together
+
+        const obj = {
+            name:"Gagan",
+            role:"engineer"
+        }
+
+        console.log(obj.name); console.log(obj.role);
+
+        obj.role = "data engineer"
+        console.log(obj)
+
+
+        obj.newSkill = "Javascript";
+
+        console.log(obj)
+
+        console.log(obj.newSkill);
+
+        delete obj.role;
+        console.log(obj)
+        console.log(typeof obj)
+
+
+        const product = {
+            name:"Phone",
+            feature:"4k-Display"
+        }
+
+        console.log(product['feature'])
+        console.log(product.feature)
+
+        const product2 = {
+            name:"Samsung S23",
+            feature:"4k-Display",
+            ['F-P-S']:'60',
+            ['8-Gen-1']:'Processor',
+        }
+
+        console.log(product2['name'])
+        console.log(product2['F-P-S'])
+        console.log(product2['8-Gen-1'])
+    </script>
+    
+</body>
+</html>
