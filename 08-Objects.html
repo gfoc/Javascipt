@@ -45,10 +45,67 @@
             ['F-P-S']:'60',
             ['8-Gen-1']:'Processor',
         }
-
         console.log(product2['name'])
         console.log(product2['F-P-S'])
         console.log(product2['8-Gen-1'])
+
+
+        const product3={
+            name:'T-shirt',
+            color:'black',
+            cotton:true,
+
+            rating:{
+                stars: 4.5,
+                reviews: '5k'
+            },
+
+            fun: function function1(){
+                console.log('Function inside an object');
+            }
+        }
+        console.log(product3.rating.reviews)
+
+        product3.fun();
+
+
+        console.log(typeof console)
+        console.log(typeof console.log)
+        // log is a function that is saved inside a console object.
+        // Math.random() is another type of javascipt of method, random function inside Math object. Built in objects
+        // 2 more types of objects
+        //JSON
+        // local storage
+        /* Javascript object notation, a syntax, similar to Javascipt object, but has less features.
+        is a lightweight format for storing and transporting data. Has less features
+
+        all properties and string must use double quotes in objects
+        JSON does not support single quotes, it also does not support functions. JSON syntax is more universal.
+        we send data between computers.
+        
+        Built in JSON Object
+        helps us convert:
+        javascript object -> JSON
+        */
+
+        console.log(JSON.stringify(product3));
+        console.log(JSON.stringify(typeof product3)); // object
+        console.log(typeof JSON.stringify(product3)); // string
+
+
+        // Now JSON --> JAvaScript object;
+        //JSON.parse()
+        const json_string = JSON.stringify(product3);
+        console.log(JSON.parse(json_string));
+
+
+        // Next Built-in object
+        //localStorage-- saves value more permanetly.
+        console.log(typeof null);
+
+
+
+
     </script>
     
 </body>
